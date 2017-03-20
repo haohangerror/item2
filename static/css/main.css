@@ -1,0 +1,371 @@
+body{
+    background: #f7f7f7;
+    font-size: 14px;
+}
+.clearfloat:after{
+    display:table;
+    content: " ";
+    clear: both;
+}
+.page-container{
+    width: 100%;
+    overflow:hidden;
+}
+.page-wrap{
+   width: 200%;
+    margin-left:0;
+}
+.container{
+    width: 50%;
+    display: inline-block;
+}
+.con{
+    width: 49%;
+    display: inline-block;
+    margin-top:50px;
+    vertical-align: top;
+}
+/*头部导航条样式*/
+.head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #eaeaee;
+    font-size: 18px;
+}
+.top-nav{
+    float: left;
+    width:80%;
+    text-align: center;
+    line-height: 50px;
+}
+.top-nav ul li{
+    display: inline-block;
+    width: 40%;
+}
+.top-nav ul li a{
+    display: inline-block;
+}
+.click{
+    color: #ff9900;
+    border-bottom: 1px solid #ff9900;
+}
+.logo{
+    float: left;
+    width: 10%;
+}
+.logo img{
+    width: 27px;
+    height: 27px;
+    padding: 10px 0 0 10px;
+}
+.login {
+    float: right;
+    width: 10%;
+    text-align: right;
+}
+.login img{
+     width: 25px;
+     height: 25px;
+    padding: 10px 10px 0 0;
+}
+/*选项卡样式*/
+.type-block{
+    width: 100%;
+    font-size: 0;
+    margin-top: 70px;
+}
+.type-block ul li{
+    display: inline-block;
+    width:33%;
+    margin-bottom:13px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.type-block li a{
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+}
+.type-block li p{
+    margin-top:-5px
+}
+.type-block li:nth-of-type(1) a{
+    background: #00ffff;
+}
+.type-block li:nth-of-type(2) a{
+    background: #ff69b4;
+}
+.type-block li:nth-of-type(3) a{
+    background: #ef4848;
+}
+.type-block li:nth-of-type(4) a{
+    background: #ff8000;
+}
+.type-block li:nth-of-type(5) a{
+    background:#00bfff ;
+}
+.type-block li:nth-of-type(6) a{
+   background: #bdfcc9;
+}
+.type-block li a em{
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin: 11px auto;
+    background: url(../img/icon-nav.png) no-repeat;
+    background-size: 34px;
+}
+.type-block li:nth-of-type(1) a em{
+    background-position: 0 -68px;
+}
+.type-block li:nth-of-type(2) a em{
+    background-position: 0 -102px;
+}
+.type-block li:nth-of-type(3) a em{
+    background-position: 0 -34px;
+}
+.type-block li:nth-of-type(4) a em{
+    background-position: 0 0;
+}
+.type-block li:nth-of-type(5) a em{
+    background-position: 0 -170px;
+}
+.type-block li:nth-of-type(1) a em{
+    background-position: 0 -204px;
+}
+/*书单展示样式*/
+.book-show{
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+.show-title h3{
+  font-size: 16px;
+  color: #4d4d4d;
+    line-height: 50px;
+    padding-left:10px;
+}
+.show-title a{
+    float: right;
+    margin-right:10px;
+    line-height: 50px;
+    color: #666;
+}
+.show-title a em{
+   display: inline-block;
+    width:16px;
+    height: 16px;
+    background: url("../img/arr_right.png") no-repeat;
+    background-size: 16px 16px;
+    vertical-align: middle;
+    margin-left:5px;
+}
+.bookshow-wrap li{
+   display: inline-block;
+    width: 32%;
+    margin-bottom:20px;
+    text-align: center;
+    vertical-align: top;
+}
+.bookshow-wrap a{
+    display: inline-block;
+}
+.bookshow-wrap img{
+    width: 88px;
+    height: 117px;
+    box-shadow:1px 3px 5px rgba(0,0,0,0.3);
+}
+.bookshow-wrap p{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #333;
+    width: 88px;
+    height: 32px;
+}
+.ad-block{
+    width: 100%;
+}
+.ad-block ul{
+    padding: 0 4% 15px;
+}
+.ad-block li{
+    display: inline-block;
+    width: 48%;
+}
+.ad-block li:nth-of-type(1){
+    padding-right:2%;
+}
+.ad-block a{
+    width: 100%;
+    display:inline-block;
+}
+.ad-block img{
+    width: 100%;
+    border-radius: 6px;
+}
+/*底部版权*/
+footer p{
+    color: #999;
+    text-align: center;
+    margin-top: 40px;
+}
+footer p+p{
+    margin:10px 0 40px 0;
+}
+/*书架*/
+.bookshelf>h3{
+    font-weight: normal;
+    line-height: 50px;
+    padding-left:20px;
+}
+.book-item{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.book-item .item>a{
+   display: inline-block;
+   padding: 20px 20px;
+}
+.item>a img{
+    width: 70px;
+    height: 93px;
+    vertical-align: top;
+    box-shadow:1px 3px 5px rgba(0,0,0,0.3);
+}
+.item .book-info{
+   display: inline-block;
+    vertical-align:top;
+   padding: 25px 0 0 20px;
+}
+.book-info h3{
+    font-size: 16px;
+}
+.book-info span{
+    font-size: 12px;
+    color: #999;
+}
+.item button{
+    float: right;
+    line-height: 30px;
+    background: #fff;
+    border:1px solid #ccc;
+    border-radius:2px;
+   padding: 0 20px;
+    margin: 50px 30px 0 0;
+}
+/*详情页样式*/
+/*图书作者版权信息*/
+header{
+    background: #eaeaee;
+    font-size: 18px;
+}
+.back-link span{
+    display: inline-block;
+    line-height: 50px;
+}
+.back-icon{
+    display: inline-block;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+.back-icon img{
+    width: 23px;
+    height: 23px;
+}
+.book-message{
+    padding: 20px 10px;
+}
+.book-mes-cont{
+    padding-bottom: 20px;
+}
+.book-mes-cont img{
+    width: 90px;
+    height: 120px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.15);
+}
+.book-caption{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+.book-caption h3{
+    font-size: 16px;
+    color:#000;
+}
+.book-caption p{
+    font-size: 10px;
+    color: #666;
+    padding-top: 36px;
+}
+.btn-wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.book-btn{
+    display: inline-block;
+    width: 48%;
+    border: none;
+    padding: 0;
+    border-radius: 4px;
+}
+.book-btn a{
+    display: block;
+    background: #fff;
+    font-size: 14px;
+    line-height: 40px;
+    border-radius: 4px;
+}
+.book-btn:nth-of-type(1) a{
+    background: #ff9900;
+    color: #fff;
+}
+.book-btn:nth-of-type(2){
+    float: right;
+    border: 1px solid #ccc;
+    line-height: 38px;
+}
+/*简介及评论部分*/
+.summary-title{
+    padding: 5px 0;
+    border-top: 1px solid #c9c9c9;
+    border-bottom: 1px solid #c9c9c9;
+}
+.summary-title ul li{
+   display: inline-block;
+    width: 49%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 36px;
+    cursor: pointer;
+}
+.summary-title li+li{
+    border-left: 1px solid #c9c9c9;
+}
+.summary-show{
+    padding: 20px 15px;
+}
+.summary-show:nth-of-type(2){
+    display: none;
+}
+.summary-show p{
+    line-height: 22px;
+}
+.book-comment{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #c9c9c9;
+}
+.book-comment p{
+    padding: 10px 0;
+}
+.comment-star{
+    display: inline-block;
+    background: url("../img/sprite.png") no-repeat;
+    background-size: 86px;
+    background-position: 0 -182px;
+    width: 86px;
+    height:13px;
+    margin-right: 10px;
+}
